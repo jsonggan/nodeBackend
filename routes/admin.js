@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-router.use('/add_product',(req,res,next)=>{
+router.get('/add_product',(req,res,next)=>{
     res.send('<form action="/product" method="POST"><input type = "text" name = "title"><button type= "submit">Add product</submit></form>');
 });
 
